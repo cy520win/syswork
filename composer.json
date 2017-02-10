@@ -1,0 +1,39 @@
+{
+  "name": "base/demo",
+  "description": "网校传erp",
+  "authors": [
+    {
+      "name": "sherry",
+      "email": "sherry@gaodun.com"
+    }
+  ],
+  "require": { 
+    "Component/restclient": "1.0.*", 
+    "php": ">=5.3.0"
+  },
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "http://gitlab.gaodun.com/component/restclient.git"
+    },
+    {
+      "type": "composer",
+      "url": "http://packagist.phpcomposer.com"
+    },
+    {
+      "packagist": false
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "": ""
+    },
+    "classmap": [
+      "Library"
+    ],
+    "files": [
+      "Helper/functions.php" 
+    ]
+  }
+}
